@@ -19,21 +19,27 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-title">Blog</div>
+        <div class="header-content">
+            <div class="container">
+                <img src="{{ theme_url }}/img/DMLogo-Red-min.png" alt="Dead Matter"/>
+            </div>
+        </div>
     </header>
     
     <section class="section">
-        <div class="container">
-            {% for page in pages|sort_by("time")|reverse %}
-                {% if page.id starts with "blog/" and not page.hidden %}
-                    <article class="blog-post">
-                        <a class="blog-post-title" href="{{ page.url }}">{{ page.title }}</a>
-                        <div class="blog-post-date">{{ page.date_formatted }}</div>
-                        <div class="blog-post-content">{{ page.description }}</div>
-                    </article>
-                {% endif %}
-            {% endfor %}
-        </div>
+        {% for page in pages|sort_by("time")|reverse %}
+            {% if page.id starts with "blog/" and not page.hidden %}
+                <article class="blog-post">
+                    <div class="container">
+                    <div class="blog-post-title">
+                        <a href="{{ page.url }}">{{ page.title }}</a>
+                    </div>
+                    <div class="blog-post-date">{{ page.date_formatted }}</div>
+                    <div class="blog-post-content">{{ page.description }}</div>
+                    </div>
+                </article>
+            {% endif %}
+        {% endfor %}
     </section>
     
     <section class="section">

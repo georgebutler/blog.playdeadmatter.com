@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+::selection {
+  background: #963232;
+  color: #ffffff;
+}
+
 body {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
@@ -15,8 +20,8 @@ body {
   overflow: hidden scroll;
   padding: 0;
   text-align: center;
-  background: #ffffff;
-  color: #1e1e1e;
+  background: #1e1e1e;
+  color: #ffffff;
 }
 
 a {
@@ -27,6 +32,11 @@ a {
 
 a:hover {
   color: #963232;
+}
+
+img {
+  user-select: none;
+  width: 100%;
 }
 
 /* Util */
@@ -40,25 +50,57 @@ a:hover {
 /* Header */
 
 .header {
-  background: #1e1e1e;
+  background-attachment: fixed;
+  background-image: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url("../img/media/HighresScreenshot01-min.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #ffffff;
   font-size: 2rem;
-  padding: 2em 0;
+}
+
+.header-content {
+  padding: 3em 0;
+}
+
+.header-title,
+.header-subtitle {
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* Section */
+
+.section {
+  background: #1e1e1e;
 }
 
 /* Blog Post */
 
 .blog-post {
-  padding: 2em 0;
+  padding: 3em 0;
   text-align: left;
 }
 
+.blog-post:nth-child(even) {
+  background: #111111;
+}
+
 .blog-post-title {
-  text-transform: uppercase;
+  color: #963232;
+  display: block;
   font-size: 2rem;
   font-weight: normal;
-  display: block;
-  color: #1e1e1e;
+  text-transform: uppercase;
+}
+
+.blog-post-title a {
+  color: #963232;
+  transition: color 0.1s ease-out;
+}
+
+.blog-post-title a:hover {
+  color: #b33c3c;
 }
 
 .blog-post-date {
@@ -67,7 +109,7 @@ a:hover {
 }
 
 .blog-post-content {
-  margin-top: 1em;
+  margin-top: 2em;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
 }

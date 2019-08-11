@@ -2,7 +2,7 @@
 Title: Guns, Guts, and Flamethrowers
 Description: A Chinese tale tells of some men sent to harm a young girl who, upon seeing her beauty, become her protectors rather than her violators. That's how I felt seeing the Earth for the first time. I could not help but love and cherish her. For those who have seen the Earth from space, and for the hundreds and perhaps thousands more who will, the experience most certainly changes your perspective. The things that we share in our world are far more valuable than those which divide us.
 Author: Joe Bloggs
-Date: 11 June 2016
+Date: 11 June 2019
 Template: Post
 ---
 
