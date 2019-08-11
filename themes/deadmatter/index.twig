@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <title>{% if meta.title %}{{ meta.title }} | {% endif %}{{ site_title }}</title>
+    {% if meta.description %}
+        <meta name="description" content="{{ meta.description|striptags }}" />
+    {% endif %}{% if meta.robots %}
+        <meta name="robots" content="{{ meta.robots }}" />
+    {% endif %}
+
+    {% if current_page %}
+        <link rel="canonical" href="{{ current_page.url }}" />
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
+</head>
+<body>
+    {{ content }}
+    
+    <section>
+        <div class="container">
+            {% for page in pages|sort_by("time")|reverse %}
+                {% if page.id starts with "blog/" and not page.hidden %}
+                    <article class="blog-post">
+                        <a class="blog-post-title" href="{{ page.url }}">{{ page.title }}</a>
+                        <time>{{ page.date_formatted }}</time>
+                        <p>{{ page.description }}</p>
+                    </article>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </section>
+</body>
+</html>

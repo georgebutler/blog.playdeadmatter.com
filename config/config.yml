@@ -1,0 +1,44 @@
+##
+# Basic
+#
+site_title: Dead Matter
+base_url: ~
+rewrite_url: ~
+timezone: UTC
+
+##
+# Theme
+#
+theme: deadmatter
+theme_url: ~
+theme_config:
+  widescreen: false
+twig_config:
+  cache: false
+  autoescape: false
+  debug: false
+
+##
+# Content
+#
+date_format: %D
+pages_order_by_meta: author
+pages_order_by: alpha
+pages_order: asc
+content_dir: content/
+content_ext: .md
+content_config:
+  extra: true
+  breaks: false
+  escape: false
+  auto_urls: true
+
+##
+# Plugins
+#
+DummyPlugin.enabled: false
+
+##
+# Custom
+#
+my_custom_setting: Hello World! # You can access custom settings in themes using {{ config.my_custom_setting }}
