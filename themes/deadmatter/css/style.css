@@ -15,8 +15,8 @@ body {
   overflow: hidden scroll;
   padding: 0;
   text-align: center;
-  background: #1e1e1e;
-  color: #ffffff;
+  background: #ffffff;
+  color: #1e1e1e;
 }
 
 a {
@@ -37,15 +37,20 @@ a:hover {
   width: 95%;
 }
 
+/* Header */
+
+.header {
+  background: #1e1e1e;
+  color: #ffffff;
+  font-size: 2rem;
+  padding: 2em 0;
+}
+
 /* Blog Post */
 
 .blog-post {
+  padding: 2em 0;
   text-align: left;
-  background: #111111;
-}
-
-.blog-post:nth-child(odd) {
-  background: #1e1e1e;
 }
 
 .blog-post-title {
@@ -53,10 +58,16 @@ a:hover {
   font-size: 2rem;
   font-weight: normal;
   display: block;
-  color: #ffffff;
+  color: #1e1e1e;
+}
+
+.blog-post-date {
+  text-transform: uppercase;
+  font-size: 0.9rem;
 }
 
 .blog-post-content {
+  margin-top: 1em;
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
 }

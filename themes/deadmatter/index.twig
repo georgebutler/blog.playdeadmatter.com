@@ -18,19 +18,27 @@
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
 </head>
 <body>
-    {{ content }}
+    <header class="header">
+        <div class="header-title">Blog</div>
+    </header>
     
-    <section>
+    <section class="section">
         <div class="container">
             {% for page in pages|sort_by("time")|reverse %}
                 {% if page.id starts with "blog/" and not page.hidden %}
                     <article class="blog-post">
                         <a class="blog-post-title" href="{{ page.url }}">{{ page.title }}</a>
-                        <time>{{ page.date_formatted }}</time>
-                        <p>{{ page.description }}</p>
+                        <div class="blog-post-date">{{ page.date_formatted }}</div>
+                        <div class="blog-post-content">{{ page.description }}</div>
                     </article>
                 {% endif %}
             {% endfor %}
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            {{ content }}
         </div>
     </section>
 </body>
