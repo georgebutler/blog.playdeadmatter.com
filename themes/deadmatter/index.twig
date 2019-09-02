@@ -39,7 +39,7 @@
     </header>
     
     <section class="section">
-        {% for page in pages|sort_by("time")|reverse %}
+        {% for page in paged_pages|sort_by("time")|reverse %}
             {% if page.id starts with "blog/" and not page.hidden %}
                 <article class="blog-post">
                     <div class="container">
@@ -52,6 +52,12 @@
                 </article>
             {% endif %}
         {% endfor %}
+    </section>
+    
+    <section class="section section-controls">
+        <div class="container">
+            {{ pagination_links }}
+        </div>
     </section>
     
     <section class="section">

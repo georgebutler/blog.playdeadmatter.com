@@ -97,6 +97,20 @@ img {
   background: #1e1e1e;
 }
 
+.section-controls {
+  padding: 1em 0;
+  background: #111;
+}
+
+.section-controls a {
+  color: #963232;
+  text-transform: uppercase;
+}
+
+.section-controls a:hover {
+  color: #b33c3c;
+}
+
 /* Blog Post */
 
 .blog-post {
