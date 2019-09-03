@@ -39,6 +39,7 @@
     "picocms/pico": "^2.0",
     "picocms/pico-theme": "^2.0",
     "picocms/pico-deprecated": "^2.0",
-    "picocms/composer-installer": "^1.0"
+    "picocms/composer-installer": "^1.0",
+    "phrozenbyte/pico-robots": "^1.0"
   }
 }

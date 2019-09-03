@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "40bf848b1020884378e00898fe6f7f6f",
+    "content-hash": "3e36432e306b9267be9ac7bbd883c931",
     "packages": [
         {
             "name": "erusev/parsedown",
@@ -95,6 +95,58 @@
                 "parser"
             ],
             "time": "2015-11-01T10:19:22+00:00"
+        },
+        {
+            "name": "phrozenbyte/pico-robots",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhrozenByte/pico-robots.git",
+                "reference": "f3a9b53aa7e64844e1d7ed80509ab27195f5ae33"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhrozenByte/pico-robots/zipball/f3a9b53aa7e64844e1d7ed80509ab27195f5ae33",
+                "reference": "f3a9b53aa7e64844e1d7ed80509ab27195f5ae33",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "pico-plugin",
+            "autoload": {
+                "classmap": [
+                    "PicoRobots.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Rudolf",
+                    "role": "Lead Developer",
+                    "homepage": "http://daniel-rudolf.de/"
+                },
+                {
+                    "name": "Contributors",
+                    "homepage": "https://github.com/PhrozenByte/pico-robots/graphs/contributors"
+                }
+            ],
+            "description": "This is Pico's official robots plugin to add a robots.txt and sitemap.xml to your website. Pico is a stupidly simple, blazing fast, flat file CMS.",
+            "homepage": "http://picocms.org/",
+            "keywords": [
+                "Sitemap",
+                "pico",
+                "pico-robots",
+                "picocms",
+                "picocms-plugin",
+                "robots",
+                "robots-txt",
+                "sitemap-xml"
+            ],
+            "time": "2017-11-27T21:38:06+00:00"
         },
         {
             "name": "picocms/composer-installer",
@@ -499,11 +551,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "picocms/pico": 0,
-        "picocms/pico-theme": 0,
-        "picocms/pico-deprecated": 0
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
