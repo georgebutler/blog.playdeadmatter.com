@@ -44,7 +44,7 @@ img {
 .container {
   margin: auto;
   max-width: 1200px;
-  width: 95%;
+  width: 90%;
 }
 
 /* Navbar */
@@ -109,6 +109,12 @@ img {
 
 .section-controls a:hover {
   color: #b33c3c;
+}
+
+.section-info {
+  background: #b33c3c;
+  color: #ffffff;
+  padding: 0.1em 0;
 }
 
 /* Blog Post */

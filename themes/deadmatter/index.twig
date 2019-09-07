@@ -18,6 +18,12 @@
     <link rel="stylesheet" href="{{ theme_url }}/css/style.css" type="text/css" />
 </head>
 <body>
+    <section class="section section-info">
+        <div class="container">
+            {{ content }}
+        </div>
+    </section>
+
     <nav class="navbar">
         <div class="container">
             <div class="navbar-right">
@@ -40,7 +46,7 @@
     
     <section class="section">
         {% for page in paged_pages|sort_by("time")|reverse %}
-            {% if page.id starts with "blog/" and not page.hidden %}
+            {% if page.id starts with "posts/" and not page.hidden %}
                 <article class="blog-post">
                     <div class="container">
                     <div class="blog-post-title">
@@ -57,12 +63,6 @@
     <section class="section section-controls">
         <div class="container">
             {{ pagination_links }}
-        </div>
-    </section>
-    
-    <section class="section">
-        <div class="container">
-            {{ content }}
         </div>
     </section>
 </body>
