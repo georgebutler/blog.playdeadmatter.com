@@ -155,3 +155,8 @@ img {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
 }
+
+.post-dark {
+  background: #111;
+  padding: 2em 4em;
+}

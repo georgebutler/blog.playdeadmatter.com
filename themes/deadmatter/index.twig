@@ -45,6 +45,7 @@
         </div>
     </header>
     
+    {% if paged_pages %}
     <section class="section">
         {% for page in paged_pages|sort_by("time")|reverse %}
             {% if page.id starts with "posts/" and not page.hidden %}
@@ -60,11 +61,14 @@
             {% endif %}
         {% endfor %}
     </section>
+    {% endif %}
     
-    <section class="section section-controls">
-        <div class="container">
-            {{ pagination_links }}
-        </div>
-    </section>
+    {% if pagination_links %}
+        <section class="section section-controls">
+            <div class="container">
+                {{ pagination_links }}
+            </div>
+        </section>
+    {% endif %}
 </body>
 </html>
