@@ -36,7 +36,7 @@ content_config:
 ##
 # Plugins
 #
-pagination_limit: 3
+pagination_limit: 10
 
 PicoEdit_404: false
 PicoEdit_options: false
