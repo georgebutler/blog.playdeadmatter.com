@@ -60,13 +60,13 @@
 
     {% if paged_pages %}
     <section class="section">
-        {% for page in paged_pages|sort_by("time")|reverse %}
+        {% for page in paged_pages|sort((a, b) => a.time <=> b.time)|reverse %}
             {% if page.id starts with "posts/" and not page.hidden %}
                 <a class="blog" href="{{ page.url }}">
                     <article class="blog-post">
                         <div class="container">
                         <div class="blog-post-title">
-                            <div>{{ page.title }} {{ page.time }}</div>
+                            <div>{{ page.title }}</div>
                         </div>
                         <div class="blog-post-date">{{ page.date_formatted }}</div>
                         <div class="blog-post-content">{{ page.description }}</div>
