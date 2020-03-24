@@ -60,7 +60,7 @@
 
     {% if paged_pages %}
     <section class="section">
-        {% for page in paged_pages|sort_by("page.time") %}
+        {% for page in paged_pages|reverse|sort_by("page.time") %}
             {% if page.id starts with "posts/" and not page.hidden %}
                 <a class="blog" href="{{ page.url }}">
                     <article class="blog-post">
