@@ -21,9 +21,9 @@ twig_config:
 ##
 # Content
 #
-date_format: %D
+date_format: %D %T
 pages_order_by_meta: author
-pages_order_by: alpha
+pages_order_by: date
 pages_order: asc
 content_dir: content/
 content_ext: .md
