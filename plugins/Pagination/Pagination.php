@@ -8,7 +8,7 @@
  * @version 1.4
  */
 class Pagination extends AbstractPicoPlugin {
-	
+
 	public $config = array();
 	public $offset = 0;
 	public $page_number = 0;
@@ -96,7 +96,7 @@ class Pagination extends AbstractPicoPlugin {
 
 		// set var for page_indicator
 		$twigVariables['page_indicator'] = $this->config['page_indicator'];
-		
+
 		// build pagination links
 		// set next and back link vars to empty. links will be added below if they are available.
 		$twigVariables['next_page_link'] = $twigVariables['prev_page_link'] = '';
@@ -129,7 +129,7 @@ class Pagination extends AbstractPicoPlugin {
 	public function onRequestUrl(&$url)
 	{
 		// checks for page # in URL
-		$pattern = '/' . $this->config['page_indicator'] . '\/[0-9]*$/';
+		$pattern = $this->config['page_indicator'] . '\/[0-9]*$/';
 		if (preg_match($pattern, $url)) {
 			$page_numbers = explode('/', $url);
 			$page_number = $page_numbers[count($page_numbers)-1];
