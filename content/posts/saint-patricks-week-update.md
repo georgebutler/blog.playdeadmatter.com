@@ -2,7 +2,7 @@
 Title: Saint Patrick's Week Update
 Description: In this update we're going to be taking a look at the work that has been done since the massive vlog 10 update. Take a look at the new lockpicking system, some new reload animations, the next completed Backer Weapon, static vehicle damage states players will find around the game world, and a peek at the props that will help to flesh out the world overall.
 Author: Regicidalnut (RegiBless)
-Date: 13 March 2020
+Date: 03/13/20
 Template: post
 ---
 # Happy Saint Patrick's Week Update!

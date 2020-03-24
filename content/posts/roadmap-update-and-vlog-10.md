@@ -2,7 +2,7 @@
 Title: Roadmap Update and Vlog 10
 Description: In this post we have the long awaited Roadmap update to let you all know what's going on and what's coming later. We also have our longest vlog yet: Vlog 10!
 Author: Dead Matter Team
-Date: 06 February 2020
+Date: 02/06/20
 Template: post
 ---
 

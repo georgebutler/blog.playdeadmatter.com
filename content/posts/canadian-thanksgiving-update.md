@@ -2,7 +2,7 @@
 Title: (Canadian) Thanksgiving Development Update
 Description: In this post we show off some new Backer weapons, some of the WIP perks systems that players will use, and dig into blockouts and the struggle for good reference images with Shirk. We’re happy to keep these blog posts coming in our continuing effort to increase transparency and communication with the community.
 Author: Regicidalnut (RegiBless)
-Date: 11 October 2019
+Date: 10/11/19
 Template: post
 ---
 # Canadian Thanksgiving Development Update

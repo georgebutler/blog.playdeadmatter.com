@@ -2,7 +2,7 @@
 Title: Happy Holidays Development Update
 Description: In this update we’re taking a look at developements that have been made on the closed alpha map, the new snow effects (and snow deformation!), road signs for Canmore, and hearing from some of the new devs on the team!
 Author: Regicidalnut (RegiBless)
-Date: 31 December 2019
+Date: 12/31/19
 Template: post
 ---
 # Happy Holidays Development Update

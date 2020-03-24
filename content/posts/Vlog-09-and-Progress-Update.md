@@ -2,7 +2,7 @@
 Title: Blog Post 1
 Description: Along with Dev Vlog 09, this post has a progress update and information regarding the release of the closed alpha to backers. We go over the state of the game, the closed alpha, the massive growth of the dev team, and how we will be improving communication moving forward. Thank you so much for your support!
 Author: Dead Matter
-Date: 10 September 2019
+Date: 09/10/19
 Template: post
 ---
 

@@ -2,7 +2,7 @@
 Title: September Development Update
 Description: Here is the first of many blog posts between the vlogs. In this post we’ll touch on some community matters like the forums, go over what the devs have been doing lately, and get a deep dive on what Shirk has been doing in the last couple weeks. These blog posts offer us a chance to dig further into the technical aspects of development and allow us to show off in the vlogs. Fair warning, there are some large images and gifs within the blog that may impact mobile data users.
 Author: Regicidalnut (RegiBless)
-Date: 25 September 2019
+Date: 09/25/19
 Template: post
 ---
 # September Development Update

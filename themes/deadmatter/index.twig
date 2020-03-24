@@ -62,6 +62,7 @@
     <section class="section">
         {% for page in paged_pages|sort_by("time")|reverse %}
             {% if page.id starts with "posts/" and not page.hidden %}
+<<<<<<< HEAD
                 <a class="blog" href="{{ page.url }}">
                     <article class="blog-post">
                         <div class="container">
@@ -73,6 +74,17 @@
                         </div>
                     </article>
                 </a>
+=======
+                <article class="blog-post">
+                    <div class="container">
+                    <div class="blog-post-title">
+                        <a href="{{ page.url }}">{{ page.title }} {{ page.time }}</a>
+                    </div>
+                    <div class="blog-post-date">{{ page.date_formatted }}</div>
+                    <div class="blog-post-content">{{ page.description }}</div>
+                    </div>
+                </article>
+>>>>>>> ce44b01041fdb588836f25482d536e09108c5922
             {% endif %}
         {% endfor %}
     </section>

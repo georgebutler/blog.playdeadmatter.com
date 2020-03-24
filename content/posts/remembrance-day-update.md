@@ -2,7 +2,7 @@
 Title: Remembrance Day (And US Thanksgiving) Development Update
 Description: In this update we’re taking a look at some of the work being done on Infected behaviors, more weapons and animations, and some of the interactive sections players will face in the mines mentioned in previous updates. We also have a break down of some of the work that Nik Z, the lead developer, has been doing recently.
 Author: Regicidalnut (RegiBless)
-Date: 21 November 2019
+Date: 11/21/19
 Template: post
 ---
 # Remembrance Day/American Thanksgiving Development Update
